@@ -3,17 +3,53 @@
 
 <suite name="AutomationSuite" verbose="1">
 
+
+
+    <test name="MiniFrameworkTests">
+        <classes>
+            <class name="com.automation.tests.MiniFrameworkTest"/>
+        </classes>
+    </test>
+
+</suite>
+    <!--
+        <test name="SmokeOnly">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.automation.tests.DataDrivenLoginTest"/>
+        </classes>
+    </test>
     <test name="SmokeTests">
         <classes>
             <class name="com.automation.tests.AnnotationDemo"/>
             <class name="com.automation.tests.AssertionDemo"/>
         </classes>
     </test>
-
+    <test name="LoginTests">
+        <classes>
+            <class name="com.automation.tests.LoginTest"/>
+            <class name="com.automation.tests.DataProviderDemo"/>
+        </classes>
+    </test>
     <test name="RegressionTests">
         <classes>
             <class name="com.automation.tests.PriorityDemo"/>
         </classes>
     </test>
+-->
+
+<!--
+<suite name="AutomationSuite" verbose="1" parallel="methods" thread-count="3">
+
+<test name="ParallelTests">
+    <classes>
+        <class name="com.automation.tests.GroupsDemo"/>
+    </classes>
+</test>
 
 </suite>
+-->
