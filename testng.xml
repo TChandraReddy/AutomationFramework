@@ -4,7 +4,6 @@
 <suite name="AutomationSuite" verbose="1">
 
 
-
     <test name="MiniFrameworkTests">
         <classes>
             <class name="com.automation.tests.MiniFrameworkTest"/>
